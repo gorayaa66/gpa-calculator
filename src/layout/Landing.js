@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import AddGpa from '../components/dashboard/AddGpa';
 import '../components/dashboard/dash.css';
-import { grades } from '../utils';
+import { grades } from '../utils/gradeList';
 
 function Landing() {
   const [showAddForm, setShowAddForm] = useState(false);

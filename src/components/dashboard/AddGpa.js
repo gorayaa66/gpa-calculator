@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { curriculum } from '../../cs-2019.json';
 import "./dash.css"
-import {grades} from '../../utils'
+import {grades} from '../../utils/gradeList'
 
 // const grades = [
 //   { label: 'A', value: 4 },
