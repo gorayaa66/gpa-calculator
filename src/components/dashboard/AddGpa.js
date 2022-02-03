@@ -1,21 +1,22 @@
 import React, { useState, useEffect } from 'react'
 import { curriculum } from '../../cs-2019.json';
 import "./dash.css"
+import {grades} from '../../utils'
 
-const grades = [
-  { label: 'A', value: 4 },
-  { label: 'A-', value: 3.75 },
-  { label: 'B+', value: 3.25 },
-  { label: 'B', value: 3 },
-  { label: 'B-', value: 2.75 },
-  { label: 'C+', value: 2.25 },
-  { label: 'C', value: 2 },
-  { label: 'C-', value: 1.75 },
-  { label: 'D', value: 1 },
-  { label: 'F', value: 0 },
-];
+// const grades = [
+//   { label: 'A', value: 4 },
+//   { label: 'A-', value: 3.75 },
+//   { label: 'B+', value: 3.25 },
+//   { label: 'B', value: 3 },
+//   { label: 'B-', value: 2.75 },
+//   { label: 'C+', value: 2.25 },
+//   { label: 'C', value: 2 },
+//   { label: 'C-', value: 1.75 },
+//   { label: 'D', value: 1 },
+//   { label: 'F', value: 0 },
+// ];
 
-const years = ['2022', '2021', '2020', '2019'];
+const years = ['2022', '2021', '2020', '2019', '2018', '2017'];
 
 function AddGpa(props) {
   const { onAddResult, allResults, calculateTotalGpa } = props;
